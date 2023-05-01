@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <value>
+          <list size="48">
+            <item index="0" class="java.lang.String" itemvalue="python-qrcode" />
+            <item index="1" class="java.lang.String" itemvalue="pandas" />
+            <item index="2" class="java.lang.String" itemvalue="XlsxWriter" />
+            <item index="3" class="java.lang.String" itemvalue="Django" />
+            <item index="4" class="java.lang.String" itemvalue="jsonfield" />
+            <item index="5" class="java.lang.String" itemvalue="psycopg2" />
+            <item index="6" class="java.lang.String" itemvalue="pycountry" />
+            <item index="7" class="java.lang.String" itemvalue="requests" />
+            <item index="8" class="java.lang.String" itemvalue="pycrypto" />
+            <item index="9" class="java.lang.String" itemvalue="xlrd" />
+            <item index="10" class="java.lang.String" itemvalue="uWSGI" />
+            <item index="11" class="java.lang.String" itemvalue="cyberplat" />
+            <item index="12" class="java.lang.String" itemvalue="libipriv" />
+            <item index="13" class="java.lang.String" itemvalue="amqp" />
+            <item index="14" class="java.lang.String" itemvalue="kombu" />
+            <item index="15" class="java.lang.String" itemvalue="Flask" />
+            <item index="16" class="java.lang.String" itemvalue="Flask-Caching" />
+            <item index="17" class="java.lang.String" itemvalue="bs4" />
+            <item index="18" class="java.lang.String" itemvalue="alembic" />
+            <item index="19" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="20" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="21" class="java.lang.String" itemvalue="numpy" />
+            <item index="22" class="java.lang.String" itemvalue="uwsgitop" />
+            <item index="23" class="java.lang.String" itemvalue="python-memcached" />
+            <item index="24" class="java.lang.String" itemvalue="flask-admin" />
+            <item index="25" class="java.lang.String" itemvalue="filelock" />
+            <item index="26" class="java.lang.String" itemvalue="flask-hashing" />
+            <item index="27" class="java.lang.String" itemvalue="Flask-Migrate" />
+            <item index="28" class="java.lang.String" itemvalue="Flask-BasicAuth" />
+            <item index="29" class="java.lang.String" itemvalue="pytz" />
+            <item index="30" class="java.lang.String" itemvalue="Flask-Testing" />
+            <item index="31" class="java.lang.String" itemvalue="aiosmtplib" />
+            <item index="32" class="java.lang.String" itemvalue="pycurl" />
+            <item index="33" class="java.lang.String" itemvalue="raven" />
+            <item index="34" class="java.lang.String" itemvalue="certifi" />
+            <item index="35" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="36" class="java.lang.String" itemvalue="aioftp" />
+            <item index="37" class="java.lang.String" itemvalue="xmltodict" />
+            <item index="38" class="java.lang.String" itemvalue="ws-core" />
+            <item index="39" class="java.lang.String" itemvalue="sentry_sdk" />
+            <item index="40" class="java.lang.String" itemvalue="six" />
+            <item index="41" class="java.lang.String" itemvalue="blinker" />
+            <item index="42" class="java.lang.String" itemvalue="alchemy-mock" />
+            <item index="43" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="44" class="java.lang.String" itemvalue="PyYaml" />
+            <item index="45" class="java.lang.String" itemvalue="tablib" />
+            <item index="46" class="java.lang.String" itemvalue="sqlalchemy_filters" />
+            <item index="47" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="Stylelint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="TaskProblemsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>
