@@ -18,5 +18,5 @@ def verify_password(password: str, hashed_pass: str) -> bool:
 def delete_avatar(url: str):
     file_name = os.path.basename(url)
     path = f'{settings.STATIC_FILES_DIR}/users/{file_name}'
-    if os.path.exists(path):
+    if file_name and os.path.exists(path):
         os.remove(path)

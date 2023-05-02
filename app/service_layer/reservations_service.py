@@ -72,13 +72,15 @@ async def create_new_reservation(data: ReservationCreateSchema) -> ResponseReser
 
 async def update_exist_reservation(data: ReservationUpdateSchema, reservation_id: int) -> ResponseReservation:
     repository = reservations_repo_factory()
-    updated_reservation = await repository.update_instance(reservation_id, data.dict(exclude_unset=True))
+    reservation = await get_reservation_or_404(reservation_id)
+    updated_reservation = await repository.update_instance(reservation.id, data.dict(exclude_unset=True))
     return ResponseReservation.from_orm(updated_reservation)
 
 
 async def delete_exist_reservation(reservation_id: int):
     repository = reservations_repo_factory()
-    await repository.delete_instance(reservation_id)
+    reservation = await get_reservation_or_404(reservation_id)
+    await repository.delete_instance(reservation.id)
 
 
 class StatisticType(str, Enum):
@@ -88,7 +90,7 @@ class StatisticType(str, Enum):
 
 async def get_reservations_count_statistics(statistic_type: StatisticType = StatisticType.WEEK) -> List[dict]:
 
-    end_range = date.today()
+    end_range = datetime.combine(datetime.now(), datetime.max.time())
     if statistic_type == StatisticType.WEEK:
         start_range = datetime.combine(end_range - timedelta(days=6), datetime.min.time())
     else:
@@ -102,7 +104,7 @@ async def get_reservations_count_statistics(statistic_type: StatisticType = Stat
 
 async def get_people_count_stat(statistic_type: StatisticType = StatisticType.WEEK) -> List[dict]:
 
-    end_range = datetime.now()
+    end_range = datetime.combine(datetime.now(), datetime.max.time())
     if statistic_type == StatisticType.WEEK:
         start_range = datetime.combine(end_range - timedelta(days=6), datetime.min.time())
     else:
